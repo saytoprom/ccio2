@@ -12,11 +12,15 @@ var cio = require('./build/Release/cio');
 // console.log(bool);
 // console.log(typeof bool);
 
-var str = cio.input('string');
-console.log(typeof str);
+// var str = cio.input('string');
+// console.log(typeof str);
 
-var str2 = cio.input();
-console.log(typeof str2);
+// var str2 = cio.input();
+// console.log(typeof str2);
+
+var arr = cio.input('Array', 5, true);
+
+console.log(arr);
 
 
 // cio.output('hello');
