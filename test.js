@@ -8,19 +8,24 @@ var cio = require('./build/Release/cio');
 // console.log(num);
 // console.log(typeof num);
 
-// var bool = cio.input('Boolean');
-// console.log(bool);
-// console.log(typeof bool);
+var bool = cio.input('Boolean');
+console.log(bool);
+console.log(typeof bool);
 
-// var str = cio.input('string');
-// console.log(typeof str);
+var str = cio.input('string');
+console.log(typeof str);
 
 // var str2 = cio.input();
 // console.log(typeof str2);
 
-var arr = cio.input('Array', 5, true);
+var str3 = cio.readline();
+console.log(str3);
 
-console.log(arr);
+var str4 = cio.readline();
+console.log(str4);
+
+// var arr = cio.input('Array', 5, true);
+// console.log(arr);
 
 
 // cio.output('hello');

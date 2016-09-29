@@ -27,6 +27,17 @@ using std::regex;
 
 map<string, int> typeMap;
 
+void ReadLine(const FunctionCallbackInfo<Value>& args) {
+  Isolate* isolate = args.GetIsolate();
+  string str;
+  char last;
+  last = cin.peek();
+  if(last == '\n')
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+  getline(cin, str);
+  args.GetReturnValue().Set(String::NewFromUtf8(isolate, str.c_str()));
+}
+
 void Input(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
   string str, type;
@@ -54,7 +65,10 @@ void Input(const FunctionCallbackInfo<Value>& args) {
         args.GetReturnValue().Set(String::NewFromUtf8(isolate, str.c_str()));
         break;
       case 2:
-        cin>>boolean;
+        boolean = true;
+        cin>>str;
+        if(str == "0" || str == "false")
+          boolean = false;
         args.GetReturnValue().Set(Boolean::New(isolate, boolean));
         break;
       case 3:
@@ -107,6 +121,7 @@ void init(Local<Object> exports) {
   typeMap["Array"] = typeMap["array"] = typeCount++;
   NODE_SET_METHOD(exports, "input", Input);
   NODE_SET_METHOD(exports, "output", Output);
+  NODE_SET_METHOD(exports, "readline", ReadLine);
 }
 
 NODE_MODULE(cio, init)

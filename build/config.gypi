@@ -42,7 +42,7 @@
     "v8_random_seed": 0,
     "v8_use_snapshot": "true",
     "want_separate_host_toolset": 0,
-    "nodedir": "C:\\Users\\chucc\\.node-gyp\\4.4.7",
+    "nodedir": "C:\\Users\\CCC\\.node-gyp\\4.4.5",
     "copy_dev_lib": "true",
     "standalone_static_library": 1
   }
