@@ -4,6 +4,10 @@ An addon for Node.js written in C++.
 
 Simple input and output on console.
 
+# Install
+
+`npm install cio -g`
+
 # Functions
 
 ## cio.input()
