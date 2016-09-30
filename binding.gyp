@@ -1,8 +1,8 @@
 {
   "targets": [
     {
-      "target_name": "cio",
-      "sources": [ "src/cio.cc" ]
+      "target_name": "ccio",
+      "sources": [ "src/ccio.cc" ]
     }
   ]
 }

@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\projects\\cio',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\chucc\AppData\Roaming\npm-cache\cio\0.1.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\chucc\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 verbose tar pack [ 'C:\\Users\\chucc\\AppData\\Roaming\\npm-cache\\cio\\0.1.0\\package.tgz',
+10 verbose tar pack   'E:\\projects\\cio' ]
+11 verbose tarball C:\Users\chucc\AppData\Roaming\npm-cache\cio\0.1.0\package.tgz
+12 verbose folder E:\projects\cio
+13 info prepublish cio@0.1.0
+14 verbose addLocalTarball adding from inside cache C:\Users\chucc\AppData\Roaming\npm-cache\cio\0.1.0\package.tgz
+15 verbose correctMkdir C:\Users\chucc\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+16 silly cache afterAdd cio@0.1.0
+17 verbose afterAdd C:\Users\chucc\AppData\Roaming\npm-cache\cio\0.1.0\package\package.json not in flight; writing
+18 verbose correctMkdir C:\Users\chucc\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 verbose afterAdd C:\Users\chucc\AppData\Roaming\npm-cache\cio\0.1.0\package\package.json written
+20 silly publish { name: 'cio',
+20 silly publish   version: '0.1.0',
+20 silly publish   description: 'a very simple addon for node.js to input and output on console.',
+20 silly publish   main: 'build/Release/cio.node',
+20 silly publish   scripts:
+20 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+20 silly publish      install: 'node-gyp rebuild' },
+20 silly publish   repository: { type: 'git', url: 'git+https://github.com/C2CCC/cio.git' },
+20 silly publish   keywords: [ 'cio' ],
+20 silly publish   author: { name: 'ChuChencheng' },
+20 silly publish   license: '',
+20 silly publish   gypfile: true,
+20 silly publish   bugs: { url: 'https://github.com/C2CCC/cio/issues' },
+20 silly publish   homepage: 'https://github.com/C2CCC/cio#readme',
+20 silly publish   readme: '# cio\r\n\r\nAn addon for Node.js written in C++.\r\n\r\nSimple input and output on console.\r\n\r\n# Install\r\n\r\n`npm install cio -g`\r\n\r\n# Usage\r\n\r\ne.g.\r\n\r\n```javascript\r\nvar cio = require(\'cio\');\r\n\r\nvar str = cio.input();\r\ncio.output(\'hello world\');\r\n```\r\n\r\n# Functions\r\n\r\n## cio.input()\r\n\r\nReturns a string type value without receiving spaces.\r\n\r\n## cio.input(type)\r\n\r\nReturns a value of specific type.\r\n\r\n**String type**: specific type that should be returned<br>\r\n  Possible value: \'Number\' | \'String\' | \'Boolean\'\r\n\r\n## cio.input(type, len[, convert])\r\n\r\nReturns an array.\r\n\r\n**String type**: specific type that should be returned<br>\r\n  Possible value: \'Array\'\r\n\r\n**Number len**: the length of array that should be read\r\n\r\n**Boolean convert**: whether array elements should be converted into String type.<br>\r\n  Possible value: true | false<br>\r\n  Default value: false\r\n\r\n## cio.readline()\r\n\r\nReturns a string type value and spaces can be received.\r\n\r\n## cio.output()\r\n\r\nPrint `\\n` to console.\r\n\r\n## cio.output(str[, wrap])\r\n\r\nPrint some string to console.\r\n\r\n**String str**: the string value that should be printed\r\n\r\n**Boolean wrap**: to print `\\n` after printing a string.<br>\r\n  Possible value: true | false<br>\r\n  Default value: true\r\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: 'bd122c4d3b8c36d90706a54f98d1a74ba2308d8d',
+20 silly publish   _id: 'cio@0.1.0',
+20 silly publish   _shasum: '84f430096ccfcfcf18d115b75c740762bc1e64b1',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name cio
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'cio',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'cio',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/cio
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading C:\Users\chucc\AppData\Roaming\npm-cache\cio\0.1.0\package.tgz
+29 verbose request uri https://registry.npmjs.org/cio
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 17:32:32
+32 verbose request using bearer token for auth
+33 verbose request id ad324f637f9341f1
+34 http request PUT https://registry.npmjs.org/cio
+35 http 403 https://registry.npmjs.org/cio
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '97',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Fri, 30 Sep 2016 09:32:36 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-itm7425-ITM',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1475227953.881812,VS0,VE3116',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating C:\Users\chucc\AppData\Roaming\npm-cache\registry.npmjs.org\cio on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: you do not have permission to publish "cio". Are you logged in as the correct user? : cio
+39 verbose stack     at makeError (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+39 verbose stack     at Request._callback (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+39 verbose stack     at Request.self.callback (D:\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (D:\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (D:\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+40 verbose statusCode 403
+41 verbose pkgid cio
+42 verbose cwd E:\projects\cio
+43 error Windows_NT 6.1.7601
+44 error argv "D:\\nodejs\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error node v4.4.7
+46 error npm  v2.15.8
+47 error code E403
+48 error you do not have permission to publish "cio". Are you logged in as the correct user? : cio
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

@@ -1,4 +1,4 @@
-# cio
+# ccio
 
 An addon for Node.js written in C++.
 
@@ -6,33 +6,33 @@ Simple input and output on console.
 
 # Install
 
-`npm install cio -g`
+`npm install ccio -g`
 
 # Usage
 
 e.g.
 
 ```javascript
-var cio = require('cio');
+var ccio = require('ccio');
 
-var str = cio.input();
-cio.output('hello world');
+var str = ccio.input();
+ccio.output('hello world');
 ```
 
 # Functions
 
-## cio.input()
+## ccio.input()
 
 Returns a string type value without receiving spaces.
 
-## cio.input(type)
+## ccio.input(type)
 
 Returns a value of specific type.
 
 **String type**: specific type that should be returned<br>
   Possible value: 'Number' | 'String' | 'Boolean'
 
-## cio.input(type, len[, convert])
+## ccio.input(type, len[, convert])
 
 Returns an array.
 
@@ -45,15 +45,15 @@ Returns an array.
   Possible value: true | false<br>
   Default value: false
 
-## cio.readline()
+## ccio.readline()
 
 Returns a string type value and spaces can be received.
 
-## cio.output()
+## ccio.output()
 
 Print `\n` to console.
 
-## cio.output(str[, wrap])
+## ccio.output(str[, wrap])
 
 Print some string to console.
 

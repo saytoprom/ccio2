@@ -1,0 +1,24 @@
+{
+  "name": "ccio",
+  "version": "0.1.0",
+  "description": "a very simple addon for node.js to input and output on console.",
+  "main": "build/Release/ccio.node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C2CCC/ccio.git"
+  },
+  "keywords": [
+    "ccio"
+  ],
+  "author": "ChuChencheng",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/C2CCC/ccio/issues"
+  },
+  "homepage": "https://github.com/C2CCC/ccio#readme"
+}
