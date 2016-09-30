@@ -15,20 +15,20 @@ Simple input and output on console.
   Returns a value of specific type.
 
   **String type**: specific type that should be returned
-    Possible value: 'Number' | 'String' | 'Boolean'
+  Possible value: 'Number' | 'String' | 'Boolean'
 
 ## cio.input(type, len[, convert])
 
   Returns an array.
 
   **String type**: specific type that should be returned
-    Possible value: 'Array'
+  Possible value: 'Array'
 
   **Number len**: the length of array that should be read
 
   **Boolean convert**: whether array elements should be converted into String type.
-    Possible value: true | false
-    Default value: false
+  Possible value: true | false
+  Default value: false
 
 ## cio.readline()
 
@@ -45,5 +45,5 @@ Simple input and output on console.
   **String str**: the string value that should be printed
 
   **Boolean wrap**: to print `\n` after printing a string.
-    Possible value: true | false
-    Default value: true
+  Possible value: true | false
+  Default value: true
