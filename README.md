@@ -8,6 +8,17 @@ Simple input and output on console.
 
 `npm install cio -g`
 
+# Usage
+
+e.g.
+
+```javascript
+var cio = require('cio');
+
+var str = cio.input();
+cio.output('hello world');
+```
+
 # Functions
 
 ## cio.input()
