@@ -62,3 +62,7 @@ Print some string to console.
 **Boolean wrap**: to print `\n` after printing a string.<br>
   Possible value: true | false<br>
   Default value: true
+
+# License
+
+ccio is released under the MIT license.
